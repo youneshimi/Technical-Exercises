@@ -1,0 +1,82 @@
+{
+    "stores": {
+      "mapeau": {
+        "name": "Mapeau",
+        "location": "Adresse Magasin Mapeau 1",
+        "products": {
+          "barcode_1234567890": {
+            "name": "Produit 1",
+            "quantity": 50,
+            "expiration_date": "2027-02-01",
+            "reservations": {
+              "reservation_1": {
+                "client_id": "client_1",
+                "reserved_quantity": 5,
+                "reservation_date": "2025-01-21",
+                "status": "pending"
+              },
+              "reservation_2": {
+                "client_id": "client_2",
+                "reserved_quantity": 3,
+                "reservation_date": "2025-01-22",
+                "status": "confirmed"
+              }
+            }
+          },
+          "barcode_0987654321": {
+            "name": "Produit 2",
+            "quantity": 30,
+            "expiration_date": "2026-06-01",
+            "reservations": {}
+          }
+        }
+      },
+      "store_2": {
+        "name": "Mapeau 2",
+        "location": "Adresse du Magasin Mapeau 2",
+        "products": {
+          "barcode_1234567890": {
+            "name": "Produit 1",
+            "quantity": 20,
+            "expiration_date": "2025-05-01",
+            "reservations": {}
+          },
+          "barcode_1122334455": {
+            "name": "Produit 3",
+            "quantity": 40,
+            "expiration_date": "2025-07-01",
+            "reservations": {}
+          }
+        }
+      }
+    },
+    "clients": {
+      "client_1": {
+        "name": "Client 1",
+        "contact": "Client1@example.com"
+      },
+      "client_2": {
+        "name": "Client 2",
+        "contact": "Client2@example.com"
+      }
+    },
+    "reservations": {
+      "reservation_1": {
+        "store_id": "mapeau",
+        "barcode": "barcode_1234567890",
+        "client_id": "client_1",
+        "reserved_quantity": 5,
+        "reservation_date": "2025-01-21",
+        "status": "pending"
+      },
+      "reservation_2": {
+        "store_id": "mapeau",
+        "barcode": "barcode_1234567890",
+        "client_id": "client_2",
+        "reserved_quantity": 3,
+        "reservation_date": "2025-01-22",
+        "status": "confirmed"
+      }
+    }
+  }
+  
