@@ -129,8 +129,3 @@ Voici un exemple concret de cette structure :
   }
 }
 
-
-## Contact
-
-- **Email :** y.shimiyounes@gmail.com  
-- **LinkedIn :** [linkedin.com/in/younes-shimi](https://www.linkedin.com/in/younes-shimi/)
